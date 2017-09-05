@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Windows\Desktop\SAM\SAM.API.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AE8F0E6-F5F2-4B67-9521-7D937D679D3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SAM.API</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>6.3.0.804</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SAM.API</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="INativeWrapper.cs" />
+    <Compile Include="NativeWrapper`1.cs" />
+    <Compile Include="ICallback.cs" />
+    <Compile Include="GameServer.cs" />
+    <Compile Include="Steam.cs" />
+    <Compile Include="Callback.cs" />
+    <Compile Include="Callback`1.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="NativeClass.cs" />
+    <Compile Include="Types\UserItemsReceived.cs" />
+    <Compile Include="Types\GameServerNewItem.cs" />
+    <Compile Include="Types\UserStatType.cs" />
+    <Compile Include="Types\GameServerItemCount.cs" />
+    <Compile Include="Types\CallbackMessage.cs" />
+    <Compile Include="Types\AppDataChanged.cs" />
+    <Compile Include="Types\UserStatsReceived.cs" />
+    <Compile Include="Types\UserStatsStored.cs" />
+    <Compile Include="Types\ItemRequestResult.cs" />
+    <Compile Include="Types\AccountType.cs" />
+    <Compile Include="Types\ItemCriteriaOperator.cs" />
+    <Compile Include="Types\ItemQuality.cs" />
+    <Compile Include="Wrappers\SteamClient009.cs" />
+    <Compile Include="Wrappers\SteamUserStats007.cs" />
+    <Compile Include="Wrappers\SteamApps003.cs" />
+    <Compile Include="Wrappers\SteamApps001.cs" />
+    <Compile Include="Wrappers\SteamGameServer009.cs" />
+    <Compile Include="Wrappers\SteamUtils005.cs" />
+    <Compile Include="Wrappers\SteamUser012.cs" />
+    <Compile Include="Interfaces\ISteamUtils005.cs" />
+    <Compile Include="Interfaces\ISteamApps003.cs" />
+    <Compile Include="Interfaces\ISteamGameServer009.cs" />
+    <Compile Include="Interfaces\ISteamApps001.cs" />
+    <Compile Include="Interfaces\ISteamUser012.cs" />
+    <Compile Include="Interfaces\ISteamClient009.cs" />
+    <Compile Include="Interfaces\ISteamUserStats007.cs" />
+    <Compile Include="Callbacks\AppDataChanged.cs" />
+    <Compile Include="Callbacks\UserStatsReceived.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
